@@ -18,7 +18,7 @@ ip = input("""
 Python3  dos工具
 
 作者          : WindowsKin
-版本          : V1.0
+版本          : V2.0
 
 请输入 IP : """)
 mode_p = input("""
