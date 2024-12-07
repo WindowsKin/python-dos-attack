@@ -1,18 +1,9 @@
-import sys
 import os
-import time
 import socket
 import threading
 from time import sleep
 from random import randbytes , _urandom
-from datetime import datetime
 
-now = datetime.now()
-hour = now.hour
-minute = now.minute
-day = now.day
-month = now.month
-year = now.year
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 os.system("clear")
