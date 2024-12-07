@@ -1,5 +1,5 @@
 # python-dos-attack
-* Python3x
+* Python3.11x
 
 * dos攻击程序
 
