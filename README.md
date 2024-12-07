@@ -5,6 +5,10 @@
 
 * 建议使用python3.12或更高的版本
 
+* 作者github : https://github.com/WindowsKin
+
+* 在终端输入 git clone https://github.com/WindowsKin/python-dos-attack.git 克隆项目代码
+* 输入 python3 dos.py 运行python-dos-attack
 
 # 作者:WindowsKin
 
