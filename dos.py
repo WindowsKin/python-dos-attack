@@ -7,8 +7,8 @@ from time import sleep
 
 condition = True
 
-def is_valid_ipv4_ipv6(ip):
-    if "." in ip:
+def is_valid_ipv4_ipv6(ip , ip_mode):
+    if ip_mode == "1":
         parts = ip.split(".")
         if len(parts)!= 4:
             return False
@@ -20,7 +20,7 @@ def is_valid_ipv4_ipv6(ip):
             except:
                 return False
         return True
-    elif ":" in ip:
+    elif ip_mode == "2":
         parts = ip.split(":")
         if len(parts) > 8:
             return False
@@ -61,7 +61,7 @@ while True:
     break
 while True:
     ip = input("请输入 IP : ")
-    if not is_valid_ipv4_ipv6(ip):
+    if not is_valid_ipv4_ipv6(ip , ip_mode):
         print("检测到你输入了无效内容，请重新输入")
         sleep(2)
         continue
