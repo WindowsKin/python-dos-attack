@@ -14,7 +14,5 @@
 
 # 电脑病毒分享/研究QQ群号:994328113
 
-# 入群密码 : Wpiyntdhonw3sKin
-
 
 # 抖音号:WindowsKin
