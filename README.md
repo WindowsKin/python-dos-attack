@@ -15,4 +15,4 @@
 # 电脑病毒分享/研究QQ群号:994328113
 
 
-# 抖音号:WindowsKin
+# bilibili @WindowsKin
