@@ -12,7 +12,7 @@
 
 # 作者:WindowsKin
 
-# 电脑病毒分享/研究QQ群号:994328113
+# 计算机技术研究QQ群号:994328113
 
 
 # bilibili @WindowsKin
