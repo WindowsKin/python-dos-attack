@@ -9,6 +9,3 @@
 
 * 在终端输入 git clone https://github.com/WindowsKin/python-dos-attack.git 克隆项目代码
 * 输入 python3 dos.py 运行python-dos-attack
-
-# 计算机技术研究QQ群①：994328113
-# 计算机技术研究QQ群②：1077706722
